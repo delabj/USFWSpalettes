@@ -1,0 +1,66 @@
+---
+title: "US Fish & Wildlife Service Color Palettes"
+author: "Joshua de la Bruere"
+date: "9/18/2020"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, 
+                      warning = FALSE,
+                      message = FALSE)
+```
+
+# Description
+
+Inspired by [this tweet](https://twitter.com/margaretsiple/status/1306695097438801920) from Dr. Margaret Siple this is a minimal package designed to add color palettes based on the photos. This package was developed at the same time DL Miller created [a gist](https://gist.github.com/dill/1729bbc9ad4f915942045f96a6cfbf9d) to allow people to use those palettes as well. 
+This package aims to allow users to install the functions needed to use these palettes
+
+## What's Inside
+
+This package contains a few basic functions and lists.
+
++ `USFWS_palettes`(List of Palettes)
++ `USFWS_palette()`
++ `scale_color_USFWS()`
++ `scale_fill_USFWS()`
+
+## Useage
+
+
+```{r}
+library(tidyverse)
+library(USFWSpalettes)
+
+# Get a palette
+USFWS_palette(5, "aurora", TRUE)
+
+
+diamonds %>%
+  ggplot(aes(x=cut, fill=cut))+
+  geom_bar()+
+  theme_minimal()+
+  scale_fill_USFWS()+
+  labs(title = "Count of Diamonds by Cut")
+
+```
+
+
+
+
+
+## Palettes Included
+
+The following is an example of all palettes included.
+
+```{r, echo=FALSE}
+
+par(mfrow=c(2,3))
+USFWS_palette(5, "dolly", TRUE)
+USFWS_palette(5, "sockeye", TRUE)
+USFWS_palette(5, "coaster", TRUE)
+USFWS_palette(5, "aurora", TRUE)
+USFWS_palette(5, "florida", TRUE)
+
+```
+

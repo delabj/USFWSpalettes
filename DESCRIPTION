@@ -1,0 +1,16 @@
+Package: USFWSpalettes
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Authors@R: c(
+  person("Joshua", "de la Bruere", email = "joshua@delabj.com", role = c("aut", "cre")),
+  person("David L", "Miller", email = "dave@ninepointeightone.net", role = c("aut")),
+  person("Margaret", "Siple", role = c("aut"))
+  )
+Maintainer: Joshua de la Bruere <joshua@delabj.com>
+Description: Use palettes inspired by USFWS instagram photos
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Requires: (ggplot2 >= 3.3.0)
+RoxygenNote: 7.0.2
