@@ -1,9 +1,7 @@
 US Fish & Wildlife Service Color Palettes
 ================
-Joshua de la Bruere
-9/18/2020
 
-# Description
+## Description
 
 Inspired by [this
 tweet](https://twitter.com/margaretsiple/status/1306695097438801920)
@@ -12,7 +10,17 @@ palettes based on the photos. This package was developed at the same
 time DL Miller created [a
 gist](https://gist.github.com/dill/1729bbc9ad4f915942045f96a6cfbf9d) to
 allow people to use those palettes as well. This package aims to allow
-users to install the functions needed to use these palettes
+users to install the functions needed to use these palettes.
+
+## How to Get
+
+You can get this package using the remotes pacakge by typing
+
+`remotes::install_github("delabj/USFWSpalettes")`
+
+or with devtools
+
+`remotes::install_github("delabj/USFWSpalettes")`
 
 ## What’s Inside
 
@@ -48,4 +56,6 @@ diamonds %>%
 
 ## Palettes Included
 
-![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-2-2.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-2-3.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-2-4.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-2-5.png)<!-- -->
+The following is an example of all palettes included.
+
+![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
